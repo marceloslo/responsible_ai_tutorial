@@ -1,0 +1,3 @@
+aequitas
+aequitas_cli
+aequitas_webapp

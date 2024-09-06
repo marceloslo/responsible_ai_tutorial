@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}
+          Bias and Fairness Audit Toolkit
+{% endblock %}
+
+{% block description %}
+        The Bias Report is powered by <a href="http://dsapp.uchicago.edu/aequitas">Aequitas</a>, an open-source bias
+        audit toolkit for machine learning developers, analysts, and policymakers to audit machine learning models for
+        discrimination and bias, and make informed and equitable decisions around developing and deploying predictive
+        risk-assessment tools.
+{% endblock %}
+
+{% block flow %}
+      <img src="/static/images/flow-0.png" width="60%" class="img-fluid center-block">
+{% endblock %}
+
+{% block content %}
+      <h4 class="space-out"> See an <a href="/example.html">example report</a> on COMPAS risk assessment scores.</h4>
+
+      <h4> Or try out the audit tool using your own data or one of our sample data sets. </h4>
+      <div class="col-xs-12 col-xs-offset-0 col-sm-offset-3 col-sm-6">
+          <a class="btn btn-primary btn-lg btn-block btn-group" href="{{ url_for('upload')}}" role="button">Get Started!</a>
+      </div>
+{% endblock %}

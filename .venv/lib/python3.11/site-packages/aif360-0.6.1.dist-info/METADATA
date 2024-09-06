@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: aif360
+Version: 0.6.1
+Summary: IBM AI Fairness 360
+Home-page: https://github.com/Trusted-AI/AIF360
+Author: aif360 developers
+Author-email: aif360@us.ibm.com
+License: Apache License 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.16
+Requires-Dist: scipy >=1.2.0
+Requires-Dist: pandas >=0.24.0
+Requires-Dist: scikit-learn >=1.0
+Requires-Dist: matplotlib
+Provides-Extra: art
+Requires-Dist: adversarial-robustness-toolbox >=1.0.0 ; extra == 'art'
+Provides-Extra: adversarialdebiasing
+Requires-Dist: tensorflow >=1.13.1 ; extra == 'adversarialdebiasing'
+Provides-Extra: disparateimpactremover
+Requires-Dist: BlackBoxAuditing ; extra == 'disparateimpactremover'
+Provides-Extra: facts
+Requires-Dist: mlxtend ; extra == 'facts'
+Requires-Dist: colorama ; extra == 'facts'
+Requires-Dist: tqdm ; extra == 'facts'
+Provides-Extra: fairadapt
+Requires-Dist: rpy2 ; extra == 'fairadapt'
+Provides-Extra: lfr
+Requires-Dist: torch ; extra == 'lfr'
+Provides-Extra: lime
+Requires-Dist: lime ; extra == 'lime'
+Provides-Extra: optimpreproc
+Requires-Dist: cvxpy >=1.0 ; extra == 'optimpreproc'
+Provides-Extra: optimaltransport
+Requires-Dist: pot ; extra == 'optimaltransport'
+Provides-Extra: reductions
+Requires-Dist: fairlearn ~=0.7 ; extra == 'reductions'
+Provides-Extra: all
+Requires-Dist: skorch ; extra == 'all'
+Requires-Dist: jupyter ; extra == 'all'
+Requires-Dist: sphinx-rtd-theme ; extra == 'all'
+Requires-Dist: igraph[plotting] ; extra == 'all'
+Requires-Dist: lime ; extra == 'all'
+Requires-Dist: tqdm ; extra == 'all'
+Requires-Dist: fairlearn ~=0.7 ; extra == 'all'
+Requires-Dist: colorama ; extra == 'all'
+Requires-Dist: tensorflow >=1.13.1 ; extra == 'all'
+Requires-Dist: sphinx ; extra == 'all'
+Requires-Dist: mlxtend ; extra == 'all'
+Requires-Dist: inFairness >=0.2.2 ; extra == 'all'
+Requires-Dist: pytest-cov >=2.8.1 ; extra == 'all'
+Requires-Dist: ipympl ; extra == 'all'
+Requires-Dist: torch ; extra == 'all'
+Requires-Dist: jinja2 >3.1.0 ; extra == 'all'
+Requires-Dist: adversarial-robustness-toolbox >=1.0.0 ; extra == 'all'
+Requires-Dist: BlackBoxAuditing ; extra == 'all'
+Requires-Dist: seaborn ; extra == 'all'
+Requires-Dist: rpy2 ; extra == 'all'
+Requires-Dist: lightgbm ; extra == 'all'
+Requires-Dist: pytest >=3.5 ; extra == 'all'
+Requires-Dist: pot ; extra == 'all'
+Requires-Dist: cvxpy >=1.0 ; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: jinja2 >3.1.0 ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: fairlearn ~=0.7 ; extra == 'docs'
+Provides-Extra: infairness
+Requires-Dist: skorch ; extra == 'infairness'
+Requires-Dist: inFairness >=0.2.2 ; extra == 'infairness'
+Provides-Extra: notebooks
+Requires-Dist: jupyter ; extra == 'notebooks'
+Requires-Dist: tqdm ; extra == 'notebooks'
+Requires-Dist: igraph[plotting] ; extra == 'notebooks'
+Requires-Dist: lightgbm ; extra == 'notebooks'
+Requires-Dist: seaborn ; extra == 'notebooks'
+Requires-Dist: ipympl ; extra == 'notebooks'
+Provides-Extra: tests
+Requires-Dist: cvxpy >=1.0 ; extra == 'tests'
+Requires-Dist: tensorflow >=1.13.1 ; extra == 'tests'
+Requires-Dist: BlackBoxAuditing ; extra == 'tests'
+Requires-Dist: torch ; extra == 'tests'
+Requires-Dist: lime ; extra == 'tests'
+Requires-Dist: adversarial-robustness-toolbox >=1.0.0 ; extra == 'tests'
+Requires-Dist: fairlearn ~=0.7 ; extra == 'tests'
+Requires-Dist: rpy2 ; extra == 'tests'
+Requires-Dist: skorch ; extra == 'tests'
+Requires-Dist: inFairness >=0.2.2 ; extra == 'tests'
+Requires-Dist: jupyter ; extra == 'tests'
+Requires-Dist: tqdm ; extra == 'tests'
+Requires-Dist: igraph[plotting] ; extra == 'tests'
+Requires-Dist: lightgbm ; extra == 'tests'
+Requires-Dist: seaborn ; extra == 'tests'
+Requires-Dist: ipympl ; extra == 'tests'
+Requires-Dist: pot ; extra == 'tests'
+Requires-Dist: mlxtend ; extra == 'tests'
+Requires-Dist: colorama ; extra == 'tests'
+Requires-Dist: pytest >=3.5 ; extra == 'tests'
+Requires-Dist: pytest-cov >=2.8.1 ; extra == 'tests'
+
+The AI Fairness 360 toolkit is an open-source library to help detect and mitigate bias in machine
+learning models. The AI Fairness 360 Python package includes a comprehensive set of metrics for datasets and models to
+test for biases, explanations for these metrics, and algorithms to mitigate bias in datasets and models.
+
+We have developed the package with extensibility in mind. This library is still in development. We encourage the
+contribution of your datasets, metrics, explainers, and debiasing algorithms.
